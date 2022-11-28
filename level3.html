@@ -75,7 +75,30 @@
       </a>
     </div>
     <script type="text/javascript">
-      eval(function(m,c,h){function z(i){return(i< 62?'':z(parseInt(i/62)))+((i=i%62)>35?String.fromCharCode(i+29):i.toString(36))}for(var i=0;i< m.length;i++)h[z(i)]=m[i];function d(w){return h[w]?h[w]:w;};return c.replace(/\b\w+\b/g,d);}('|||window|onload|function|document|onkeydown|var|event|arguments|if|keyCode|123|return|false|else|ctrlKey|shiftKey|73|121|85|oncontextmenu|Click|button|returnValue|onmousedown|toDevtools|letnum|letdevtools|new|Date|devtools|toString|num|location||href|https|yongheng330|github|io|webTest|console|log'.split('|'),'3.4=5(){6.7=5(){8 A=3.9||a[0];b(A.c==d){e f;}g b((A.h)&&(A.i)&&(A.c==j)){e f;}g b((A.i)&&(A.c==k)){e f;}g b((A.h)&&(A.c==l)){e f;}};6.m=5(){e f;}5 n(){b(9.o==2){3.9.p=f;}}6.q=n;5 r(){s=0;t=u v();w.x=5(){y++;b(y>1){3.z.B="C://D.E.F/G/";}}H.I(\'\',w);}r();}',{}))
+      window.onload = function() {
+    document.onkeydown = function() {
+        var A = window.event || arguments[0];
+        if (A.keyCode == 123) {
+            return false;
+        } else if ((A.ctrlKey) && (A.shiftKey) && (A.keyCode == 73)) {
+            return false;
+        } else if ((A.shiftKey) && (A.keyCode == 121)) {
+            return false;
+        } else if ((A.ctrlKey) && (A.keyCode == 85)) {
+            return false;
+        }
+    };
+    document.oncontextmenu = function() {
+        return false;
+    }
+
+    function Click() {
+        if (event.button == 2) {
+            window.event.returnValue = false;
+        }
+    }
+    document.onmousedown = Click;
+}
     </script> 
   </body>
 </html>
