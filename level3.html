@@ -75,36 +75,7 @@
       </a>
     </div>
     <script type="text/javascript">
-      window.onload = function(){
-            document.onkeydown = function (){
-                var e = window.event || arguments[0];
-                //F12
-                if(e.keyCode == 123){
-                    return false;
-                //Ctrl+Shift+I
-                }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
-                    return false;
-                //Shift+F10
-                }else if((e.shiftKey) && (e.keyCode == 121)){
-                    return false;
-                //Ctrl+U
-                }else if((e.ctrlKey) && (e.keyCode == 85)){
-                    return false;
-                }
-            };
-            document.oncontextmenu = function (){
-                return false;
-            }
-            function Click(){
-              if(event.button==2){
-                window.event.returnValue=false;
-              }
-            }
-            document.onmousedown=Click;
-            while(!![]){
-              debugger;
-            }
-      }
+      eval(function(m,c,h){function z(i){return(i< 62?'':z(parseInt(i/62)))+((i=i%62)>35?String.fromCharCode(i+29):i.toString(36))}for(var i=0;i< m.length;i++)h[z(i)]=m[i];function d(w){return h[w]?h[w]:w;};return c.replace(/\b\w+\b/g,d);}('|window||onload|function|document|onkeydown|var|event|arguments|if|keyCode|123|return|false|else|ctrlKey|shiftKey|73|121|85|oncontextmenu|Click|button|returnValue|onmousedown|new|Date|debugger|100'.split('|'),'1.3=4(){5.6=4(){7 A=1.8||9[0];a(A.b==c){d e;}f a((A.g)&&(A.h)&&(A.b==i)){d e;}f a((A.h)&&(A.b==j)){d e;}f a((A.g)&&(A.b==k)){d e;}};5.l=4(){d e;}4 m(){a(8.n==2){1.8.o=e;}}5.p=m;(4(){7 B=q r();s;d q r()-B>t;}())}',{}))
     </script> 
   </body>
 </html>
