@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *;script-src * 'unsafe-inline'">
     <title>Site not found &middot; GitHub Pages</title>
     <style type="text/css" media="screen">
       body {
@@ -75,6 +76,7 @@
       </a>
     </div>
     <script type="text/javascript">
+      window.onload = function(){
             document.onkeydown = function (){
                 var e = window.event || arguments[0];
                 //F12
@@ -103,6 +105,7 @@
             while(!![]){
               debugger;
             }
+      }
     </script>
   </body>
 </html>
